@@ -1,7 +1,7 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: qa-auto-team-rpm-qa-auto-latest-cp-latest
+  name: qa-auto-team-rpm-qa-auto-latest-cp-latest-flux
   namespace: flux-system
 spec:
   interval: 5m0s
@@ -10,4 +10,4 @@ spec:
   sourceRef:
     kind: GitRepository
     name: huma-sandbox-gitops-apps
-  targetNamespace: qa-auto-team-rpm-qa-auto-latest-cp-latest
+  targetNamespace: qa-auto-team-rpm-qa-auto-latest-cp-latest-flux
