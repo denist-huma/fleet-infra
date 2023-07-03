@@ -1,0 +1,13 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: huma-sandbox-gitops-apps
+  namespace: flux-system
+spec:
+  interval: 30s
+  ref:
+    branch: main
+  secretRef:
+    name: huma-sandbox-gitops-apps-auth
+  timeout: 60s
+  url: https://github.com/denist-huma/huma-sandbox-gitops-apps.git
