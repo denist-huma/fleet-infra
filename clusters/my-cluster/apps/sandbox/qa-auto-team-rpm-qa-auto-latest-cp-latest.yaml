@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 5m0s
-  path: apps/sandbox/qa-auto-team-rpm-qa-auto-latest-cp-latest
+  path: apps/sandbox/qa-auto-team-rpm-qa-auto-latest-cp-latest-flux
   prune: true
   sourceRef:
     kind: GitRepository
